@@ -1,0 +1,8 @@
+asgiref==3.6.0
+backports.zoneinfo==0.2.1
+certifi==2022.12.7
+gunicorn==20.1.0
+Django==4.1.4
+sqlparse==0.4.3
+tzdata==2022.7
+wincertstore==0.2

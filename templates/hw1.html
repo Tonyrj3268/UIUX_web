@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		{% load static %}
+		<title>HW 1 - Mega Bank</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="{% static 'css/hw1.css' %}">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="{% static 'js/skel.min.js' %}"></script>
+		<script src="{% static 'js/skel-panels.min.js' %}"></script>
+		<script src="{% static 'js/init.js' %}"></script>
+		
+		<noscript>
+			<link rel="stylesheet" href="/static/css/skel-noscript.css" />
+			<link rel="stylesheet" href="/static/css/style.css" />
+			<link rel="stylesheet" href="/static/css/style-desktop.css" />
+		</noscript>
+	</head>
+	<body class="homepage">
+
+	<!-- Header -->
+		<div id="header">
+			<div id="nav-wrapper"> 
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li class="active"><a href="{% url 'index' %}">Homepage</a></li>
+						<li><a href="{% url 'hw1' %}">HW 1 - Mega Bank</a></li>
+						<li><a href="#">HW 2</a></li>
+						<li><a href="#">HW 3</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="container"> 
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a>使用者體驗作業展示</a></h1>
+				</div>
+			</div>
+		</div>
+		
+    <!--Content-->
+	<div id="featured">
+		<div class="container">
+			<header>
+				<h2>作業一</h2>
+			</header>
+			<p>兆豐銀行換匯功能之使用者體驗</p>
+		</div>
+		<div class="flex flex-col gap-8 justify-center items-center">
+			<!-- card-->
+			<section id="one" class="wrapper style1">
+				<div class="inner">
+					<article class="feature left">
+						<div class="flex flex-row items-center">
+							<span class="image"><img id="img1" src="\static\images\artifact_model.jpg" alt="" /></span>
+							<div class="content">
+								<ul style="list-style: disc;">
+									<li>It's difficult to locate the desired functions on the MegaBank website due to its versatility.</li>
+									<li>Search function was slow, and the query function was not detailed enough for users.</li>
+									<li>The exchange rate table and the service location search function convenient.</li>
+								</ul>
+								<ul class="actions">
+									<li>
+										<a class="button alt" id="show-more-1">More</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- hidden video and script -->
+						<div class="hidden items-center flex flex-col" id="hidden-content-1">
+							<div class="video mb-4 mt-4">
+								<h1>影片</h1>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/I8if9i5a0tI" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="summarize mb-4 mt-4">
+								<h1>影片節錄重點</h1>
+								<ul style="list-style: disc;">
+									<li>The interviewee exchanged currency at a physical bank and only exchanged US dollars.</li>
+									<li>The interviewee did not usually check the exchange rate but only started checking about two weeks ago and would not compare exchange rates at different banks.</li>
+									<li>The interviewee would not open a separate foreign currency account for exchange but still found it more convenient to communicate with people at a physical bank instead of online one.</li>
+									<li>The interviewee struggled to find information on how to open a foreign currency account on the bank's website and found the search function slow and confusing.</li>
+									<li>They preferred to open an account online if available.</li>
+									<li>The interviewee found the search function for finding physical bank locations convenient.</li>
+									<li>Overall, they gave the bank a score of 5 out of 10, citing difficulty finding the desired functions and the website's complexity. He would not recommend it to friends and relatives.</li>
+								</ul>
+							</div>
+						</div>
+					</article>
+					<article class="feature right">
+						<div class="flex flex-reverse-row items-center">
+							<span class="image"><img id="img2" src="\static\images\uiux.hw1_2.png" alt="" /></span>
+							<div class="content">
+								<ul style="list-style: disc;">
+									<li>Feeling confused when it comes to find how to open an foreign currency account.</li>
+									<li>The interface is quite modern and not difficult to use.</li>
+									<li>It is pretty useful to trial exchange rate on one site.</li>
+								</ul>
+								<ul class="actions">
+									<li>
+										<a class="button alt" id="show-more-2">More</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="hidden items-center flex flex-col" id="hidden-content-2">
+							<div class="video mb-4 mt-4">
+								<h1>影片</h1>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/LZsYYQ_s1so" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="summarize mb-4 mt-4">
+								<h1>影片節錄重點</h1>
+								<ul style="list-style: disc;">
+									<li>The interviewee keeps an eye on the exchange rate of the Japanese currency when studying in Japan.</li>
+									<li>The interviewee found that other banks are cheaper, there will still be a handling fee if the interviewee go there, so the interviewee should just use Wing Fung.</li>
+									<li>The interviewee thought that the design was quite modern and did not feel like a failure.</li>
+									<li>The interviewee would say that Wing Fung's pages and information are more lively and detailed</li>
+									<li>Overall, the interviewee gave this site a 6 or 7 out of 10, which means there is still room for improvement.</li>
+								</ul>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+		</div>
+		<!-- content1 -->
+		
+	  </div>
+	</div>
+	<!-- Tweet -->
+		<div id="tweet">
+			<div class="container">
+				<section>
+					<blockquote>&ldquo;賈伯斯有一句名言：「我討厭笨蛋，但我做的產品連笨蛋也會用」，所以從使用者需求出發，專注在使用者體驗，才能設計出笨蛋也會用的系統。&rdquo;</blockquote>
+				</section>
+			</div>
+		</div>
+
+	<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<section>
+					<header>
+						<h2>使用者體驗</h2>
+						<span class="byline">一個厲害的產品，要能被使用者接受，要能被使用者批評，要能為使用者更改</span>
+					</header>
+					<ul class="contact">
+						<li><a href="https://github.com/Tonyrj3268" class="fa fa-github"><span>github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/chia-cheng-lin-45510826a/" class="fa fa-linkedin"><span>linkedin</span></a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+	<!-- Copyright -->
+		<div id="copyright">
+			<div class="container">
+				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+			</div>
+		</div>
+		<script src="/static/js/hw1.js"></script>
+	</div>
+	</body>
+</html>
