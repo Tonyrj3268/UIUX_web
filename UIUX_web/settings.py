@@ -22,10 +22,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ryi@*k0d_j4m&0n^-4*#0=ujkew7@z@x73#*qabt(codd+tj4y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 #ALLOWED_HOSTS = ['UIUX-web.eba-zecmeuz2.ap-southeast-1.elasticbeanstalk.com','127.0.0.1',"172.31.20.21"]
-ALLOWED_HOSTS = ['UIUX-web-dev.eba-zecmeuz2.ap-southeast-1.elasticbeanstalk.com','127.0.0.1']
+ALLOWED_HOSTS = ['UIUX-web-dev.eba-zecmeuz2.ap-southeast-1.elasticbeanstalk.com','127.0.0.1','172.31.7.2']
 
 
 # Application definition
