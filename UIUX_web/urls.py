@@ -17,8 +17,9 @@ from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import RedirectView
 from health_check import views
+import os
+
 urlpatterns = [
-    path('health_check', views.health_check),
     path('', RedirectView.as_view(url='/myapp/')),
     path('myapp/', include('myapp.urls')),
     path('admin/', admin.site.urls),
