@@ -19,7 +19,10 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    # path('base',views.base,name='base'),
     path('',views.index,name='index'),
-    path('hw1',views.hw1,name='hw1')
+    path('hw1',views.hw1,name='hw1'),
+    path('hw2',views.hw2,name='hw2'),
+    
     
 ]

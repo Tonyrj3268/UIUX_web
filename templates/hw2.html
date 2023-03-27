@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/hw2.css' %}">
+{% endblock css %}
+
+{% block Logo %}
+<div id="logo">
+    <h1><a>使用者體驗作業展示</a></h1>
+</div>
+{% endblock Logo %}
+
+{% block Featured %}
+<!--Content-->
+<div id="featured">
+    <div class="container">
+        <header>
+            <h2>作業二</h2>
+        </header>
+        <p>學習使用 Affinity Diagram 工具去組織使用者的回饋和想法</p>
+        <div class="flex items-center flex-col ">
+            <img  class="hw2_pro width-80 height-auto" src="{% static 'images/hw2_pro.jpg'%}" alt="">
+            <img class="hw2_pro width-80 height-auto mt-4" src="{% static 'images/hw2_con.jpg'%}" alt="">
+        </div>
+        <a class="mt-8" href="https://miro.com/app/board/uXjVMaeJyD0=/?share_link_id=290151249779">前往Miro看完整版</a>
+        
+    </div>
+
+</div>
+
+{% endblock Featured%}
+
+{% block js %}
+<script src="{% static 'js/hw2.js'%}"></script>
+{% endblock js%}

@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		{% load static %}
+		<title>My UI/UX web</title>
+        <link rel="shortcut icon" href="#" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="{% static 'js/skel.min.js' %}"></script>
+		<script src="{% static 'js/skel-panels.min.js' %}"></script>
+
+		{% block css %}{% endblock css%}
+
+		<noscript>
+			<link rel="stylesheet" href="/static/css/skel-noscript.css" />
+			<link rel="stylesheet" href="/static/css/style.css" />
+			<link rel="stylesheet" href="/static/css/style-desktop.css" />
+		</noscript>
+	</head>
+	<body class="homepage">
+
+	<!-- Header -->
+		<div id="header">
+			<div id="nav-wrapper"> 
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li class="active"><a href="{% url 'index' %}">Homepage</a></li>
+						<li><a href="{% url 'hw1' %}">HW 1 - Mega Bank</a></li>
+						<li><a href="{% url 'hw2' %}">HW 2 - Affinity Diagram</a></li>
+						<li><a href="#">HW 3</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="container"> 
+				<!-- Logo -->
+                {% block Logo %}{% endblock Logo%}
+				
+			</div>
+		</div>
+    {% block Featured %}{% endblock Featured%}
+	<!-- Tweet -->
+		<div id="tweet">
+			<div class="container">
+				<section>
+					<blockquote>&ldquo;賈伯斯有一句名言：「我討厭笨蛋，但我做的產品連笨蛋也會用」，所以從使用者需求出發，專注在使用者體驗，才能設計出笨蛋也會用的系統。&rdquo;</blockquote>
+				</section>
+			</div>
+		</div>
+
+	<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<section>
+					<header>
+						<h2>使用者體驗</h2>
+						<span class="byline">一個厲害的產品，要能被使用者接受，要能被使用者批評，要能為使用者更改</span>
+					</header>
+					<ul class="contact">
+						<li><a href="https://github.com/Tonyrj3268" class="fa fa-github"><span>github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/chia-cheng-lin-45510826a/" class="fa fa-linkedin"><span>linkedin</span></a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+	<!-- Copyright -->
+		<div id="copyright">
+			<div class="container">
+				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+			</div>
+		</div>
+        <script src="{% static 'js/init.js' %}"></script>
+		{% block js %}{% endblock js%}
+	</body>
+</html>
