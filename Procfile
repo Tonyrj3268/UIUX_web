@@ -1,0 +1,1 @@
+web: gunicorn UIUX_web.wsgi

@@ -23,6 +23,7 @@ urlpatterns = [
     path('',views.index,name='index'),
     path('hw1',views.hw1,name='hw1'),
     path('hw2',views.hw2,name='hw2'),
+    path('hw3',views.hw3,name='hw3'),
     
     
 ]

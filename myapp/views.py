@@ -11,3 +11,6 @@ def hw1(request):
 def hw2(request):
     # 今天先不探討什麼是 render，先記得它會去撈 test.html
     return render(request, 'hw2.html')
+def hw3(request):
+    # 今天先不探討什麼是 render，先記得它會去撈 test.html
+    return render(request, 'hw3.html')
