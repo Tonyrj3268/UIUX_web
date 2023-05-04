@@ -1,4 +1,4 @@
-ARG PYTHON_VERSION=3.10-slim-buster
+ARG PYTHON_VERSION=3.9-slim-buster
 
 FROM python:${PYTHON_VERSION}
 
@@ -10,17 +10,15 @@ RUN mkdir -p /code
 WORKDIR /code
 
 COPY requirements.txt /tmp/requirements.txt
-
 RUN set -ex && \
     pip install --upgrade pip && \
     pip install -r /tmp/requirements.txt && \
     rm -rf /root/.cache/
+COPY . /code
 
-COPY . /code/
-
+ENV SECRET_KEY "AIjt3UfgYTWvRsGVNYBvKoy877m6Sde9CM0dcmO2g3WinYlpF7"
 RUN python manage.py collectstatic --noinput
 
 EXPOSE 8000
 
-# replace demo.wsgi with <project_name>.wsgi
 CMD ["gunicorn", "--bind", ":8000", "--workers", "2", "UIUX_web.wsgi"]

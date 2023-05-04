@@ -1,7 +1,6 @@
-UIUX_web/settings.py
 .env
 .venv
 .dockerignore
 db.sqlites3
 fly.toml
-Dockerfle
+Dockerfile

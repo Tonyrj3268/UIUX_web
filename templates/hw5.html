@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/hw3.css' %}">
+{% endblock css %}
+
+{% block Logo %}
+<div id="logo">
+    <h1><a>使用者體驗作業展示</a></h1>
+</div>
+{% endblock Logo %}
+
+{% block Featured %}
+<!--Content-->
+<div id="featured">
+    <div class="container">
+        <header>
+            <h2>作業五</h2>
+        </header>
+        <p>撰寫 Personas 去分析我們的目標客戶並應用於設計當中</p>
+        <div class="flex flex-col gap-8 justify-center items-center bg-white">
+            <h3>Here are the summary the feedback/comments/insights we received:</h3>
+            <ol>
+                <li>The app panel design is easy to understand and supports other settings such as foreign exchange and languages. However, there are suggestions to revise the market plots and add a button to guide users from the exchange rate conversion to the actual exchange.</li>
+                <li>The system has a cool feature of displaying a money flow table, but there are some areas for improvement such as adding prompts for personal information format, making the trade button more visible, and adding a button on the exchange page. Additionally, it would be helpful to provide notifications to users after completing a transaction.</li>
+            </ol>
+        </div>
+        <div class="flex flex-col gap-8 justify-center items-center bg-white">
+            <p>Based on the feedback collected, here are some possible revisions to the Lo-Fi design we have came up with:</p>
+            <h3>Main revisions:</h3>
+            <ul>
+                <li>Add a foreign exchange service to the app panel.</li>
+                <li>Support multiple languages in the app panel.</li>
+                <li>Revise the market plots on the index page.</li>
+                <li>Add a button to guide users from the exchange rate conversion to the actual exchange.</li>
+            </ul>
+            <h3>Additional revisions:</h3>
+            <ul>
+                <li>Improve the personal information format prompts.</li>
+                <li>Make the trade button more visible on the exchange page.</li>
+                <li>Add a notification feature for users after completing a transaction.</li>
+                <li>Further optimize the other functionalities of the app panel.</li>
+            </ul>
+            <p>It's important to prioritize these revisions based on their impact and feasibility, and to test the revised Lo-Fi design with users to ensure that it meets their needs and expectations.</p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock Featured%}
+
+{% block js %}
+{% endblock js%}
