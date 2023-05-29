@@ -1,35 +1,42 @@
-{% extends 'base.html' %}
-{% load static %}
-
-{% block css %}
-<link rel="stylesheet" href="{% static 'css/hw3.css' %}">
-{% endblock css %}
-
-{% block Logo %}
+{% extends 'base.html' %} {% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'css/hw3.css' %}" />
+<style>
+  iframe {
+    clip-path: inset(5% 0 35% 0);
+    margin: -5% 0 -35% 0;
+  }
+</style>
+{% endblock css %} {% block Logo %}
 <div id="logo">
-    <h1><a>使用者體驗作業展示</a></h1>
+  <h1><a>使用者體驗作業展示</a></h1>
 </div>
-{% endblock Logo %}
-
-{% block Featured %}
+{% endblock Logo %} {% block Featured %}
 <!--Content-->
 <div id="featured">
-    <div class="container">
-        <header>
-            <h2>作業三</h2>
-        </header>
-        <p>撰寫 Personas 去分析我們的目標客戶並應用於設計當中</p>
-        <div class="flex items-center flex-col">
-            <iframe 
-                    onload='var _self=this;this.contentWindow.postMessage("requestDocHeight", "https://uiuxteam8.xtensio.com");window.addEventListener("message", function(event){console.log("message received by parent ",event);_self.style.height=event.data+"px";}, false);' 
-                    width="100%" height="50%" style="border:none;" src="https://uiuxteam8.xtensio.com/nbujztr4?embed=iframe"></iframe>
-        </div>
-        {% comment %} <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F1hUtpEDQvTWES8yJPXV77I%2FUIUX%3Fnode-id%3D23-820%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D23%253A820" allowfullscreen></iframe> {% endcomment %}
+  <div class="container">
+    <header>
+      <h2>作業三</h2>
+    </header>
+    <p>撰寫 Personas 去分析我們的目標客戶並應用於設計當中</p>
+    <div class="flex items-center flex-col">
+      <iframe
+        onload='var _self=this;this.contentWindow.postMessage("requestDocHeight", "https://uiuxteam8.xtensio.com");window.addEventListener("message", function(event){console.log("message received by parent ",event);_self.style.height=event.data+"px";}, false);'
+        width="100%"
+        height="1700px"
+        style="border: none"
+        src="https://uiuxteam8.xtensio.com/nbujztr4?embed=iframe"
+      ></iframe>
     </div>
-
+    {% comment %}
+    <iframe
+      style="border: 1px solid rgba(0, 0, 0, 0.1)"
+      width="800"
+      height="450"
+      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F1hUtpEDQvTWES8yJPXV77I%2FUIUX%3Fnode-id%3D23-820%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D23%253A820"
+      allowfullscreen
+    ></iframe>
+    {% endcomment %}
+  </div>
 </div>
 
-{% endblock Featured%}
-
-{% block js %}
-{% endblock js%}
+{% endblock Featured%} {% block js %} {% endblock js%}

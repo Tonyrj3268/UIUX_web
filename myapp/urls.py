@@ -20,11 +20,11 @@ from . import views
 
 urlpatterns = [
     # path('base',views.base,name='base'),
-    path('',views.index,name='index'),
-    path('hw1',views.hw1,name='hw1'),
-    path('hw2',views.hw2,name='hw2'),
-    path('hw3',views.hw3,name='hw3'),
-    path('hw5',views.hw5,name='hw5'),
-    
-    
+    path("", views.index, name="index"),
+    path("hw1", views.hw1, name="hw1"),
+    path("hw2", views.hw2, name="hw2"),
+    path("hw3", views.hw3, name="hw3"),
+    path("hw4", views.hw4, name="hw4"),
+    path("hw5", views.hw5, name="hw5"),
+    path("hw6", views.hw6, name="hw6"),
 ]

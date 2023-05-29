@@ -1,0 +1,40 @@
+{% extends 'base.html' %} {% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'css/hw3.css' %}" />
+<style>
+  .iframe-container {
+    /* 設定iframe容器的寬度、高度，以及位置等屬性 */
+    width: 960px;
+    height: 569px;
+    position: relative;
+    margin: 40px auto 0;
+  }
+</style>
+{% endblock css %} {% block Logo %}
+<div id="logo">
+  <h1><a>使用者體驗作業展示</a></h1>
+</div>
+{% endblock Logo %} {% block Featured %}
+<!--Content-->
+<div id="featured">
+  <div class="container">
+    <header>
+      <h2>作業六</h2>
+    </header>
+    <p>
+      使用Heuristic Evaluation去評估界面設計，從而發現潛在的問題並提供改進建議。
+    </p>
+    <div class="iframe-container flex items-center flex-col">
+      <iframe
+        src="https://docs.google.com/presentation/d/e/2PACX-1vQaM8o3za-IsdHs7owpsNg90ZMZA5j6_365dCHo6_KdNJvquAdMZMIXokc_kHrOVvukfm9uTVV9N0Ny/embed?start=false&loop=false&delayms=3000"
+        frameborder="0"
+        width="960"
+        height="569"
+        allowfullscreen="true"
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+{% endblock Featured%} {% block js %} {% endblock js%}

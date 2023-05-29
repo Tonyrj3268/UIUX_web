@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'css/hw3.css' %}" />
+<style></style>
+{% endblock css %} {% block Logo %}
+<div id="logo">
+  <h1><a>使用者體驗作業展示</a></h1>
+</div>
+{% endblock Logo %} {% block Featured %}
+<!--Content-->
+<div id="featured">
+  <div class="container">
+    <header>
+      <h2>作業四</h2>
+    </header>
+    <p>製作Lofi Prototype幫助我們更好地理解用戶需求</p>
+    <div class="flex items-center flex-col">
+      <iframe
+        style="border: 1px solid rgba(0, 0, 0, 0.1)"
+        width="960"
+        height="569"
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F1hUtpEDQvTWES8yJPXV77I%2FUIUX%3Ftype%3Ddesign%26t%3DO5nugowPLSnvyjgF-1"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+{% endblock Featured%} {% block js %} {% endblock js%}

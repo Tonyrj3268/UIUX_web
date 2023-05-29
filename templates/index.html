@@ -1,159 +1,271 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		{% load static %}
-		<title>My UI/UX web</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="{% static 'js/skel.min.js' %}"></script>
-		<script src="{% static 'js/skel-panels.min.js' %}"></script>
-		
-		<noscript>
-			<link rel="stylesheet" href="/static/css/skel-noscript.css" />
-			<link rel="stylesheet" href="/static/css/style.css" />
-			<link rel="stylesheet" href="/static/css/style-desktop.css" />
-		</noscript>
-	</head>
-	<body class="homepage">
+  <head>
+    {% load static %}
+    <title>My UI/UX web</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{% static 'js/skel.min.js' %}"></script>
+    <script src="{% static 'js/skel-panels.min.js' %}"></script>
 
-	<!-- Header -->
-		<div id="header">
-			<div id="nav-wrapper"> 
-				<!-- Nav -->
-				<nav id="nav">
-					<ul>
-						<li class="active"><a href="{% url 'index' %}">Homepage</a></li>
-						<li><a href="{% url 'hw1' %}">HW 1 - Mega Bank</a></li>
-						<li><a href="{% url 'hw2' %}">HW 2 - Affinity Diagram</a></li>
-						<li><a href="{% url 'hw3' %}">HW 3 - Personas</a></li>
-						<li><a href="{% url 'hw5' %}">HW 5 - LOFI Summary</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="container"> 
-				<!-- Logo -->
-				<div id="logo">
-					<h1><a>Welcome</a></h1>
-					<span class="tag">This is Group 8's Home-work web</span>
-				</div>
-			</div>
-		</div>
+    <noscript>
+      <link rel="stylesheet" href="/static/css/skel-noscript.css" />
+      <link rel="stylesheet" href="/static/css/style.css" />
+      <link rel="stylesheet" href="/static/css/style-desktop.css" />
+    </noscript>
+  </head>
+  <body class="homepage">
+    <!-- Header -->
+    <div id="header">
+      <div id="nav-wrapper">
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li class="active"><a href="{% url 'index' %}">Homepage</a></li>
+            <li><a href="{% url 'hw1' %}">HW 1 - Mega Bank</a></li>
+            <li><a href="{% url 'hw2' %}">HW 2 - Affinity Diagram</a></li>
+            <li><a href="{% url 'hw3' %}">HW 3 - Personas</a></li>
+            <li><a href="{% url 'hw4' %}">HW 4 - LOFI Prototype</a></li>
+            <li><a href="{% url 'hw5' %}">HW 5 - LOFI Summary</a></li>
+            <li><a href="{% url 'hw6' %}">HW 6 - Heuristic Evaluation</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container">
+        <!-- Logo -->
+        <div id="logo">
+          <h1><a>Welcome</a></h1>
+          <span class="tag">This is Group 8's Home-work web</span>
+        </div>
+      </div>
+    </div>
 
-	<!-- Featured -->
-		<div id="featured">
-			<div class="container">
-				<header>
-					<h2>歡迎來到 使用者體驗</h2>
-				</header>
-				<p>在這堂<strong>使用者體驗</strong>課程中，我們將為您帶來不同的UI/UX知識. 並且呈現給您第八組的課後作業，讓您對UI/UX有更完整的理解.</p>
-				<hr />
-				<div class="row">
-					<section class="4u">
-						<img src="\static\images\megabank.png">
-						<h3>HW 1</h3>
-						<p>The goal of HW1 is to run CI to examine users' experience regarding foreign exchange via online systems or mobile apps.</p>
-						<a href="{% url 'hw1' %}" class="button button-style1">Read More</a>
-					</section>
-					<section class="4u">
-						<img src="\static\images\hw2_pro.jpg">
-						<h3>HW 2</h3>
-						<p>In this HW2, we will use the tool of Affinity diagram to learn how to organize data and ideas.</p>
-						<a href="{% url 'hw2' %}" class="button button-style1">Read More</a>
-					</section>
-					<section class="4u">
-						<img src="\static\images\hw3_persona.png">
-						<h3>HW 3</h3>
-						<p>In UI/UX design, a persona represents the needs, expectations and behaviours of the target user, providing a specific reference point to help designers produce designs that are closer to the user's needs.</p>
-						<a href="{% url 'hw3' %}" class="button button-style1">Read More</a>
-					</section>
-					<section class="4u">
-						<img src="\static\images\hw5.png">
-						<h3>HW 5</h3>
-						<p>Using LOFI prototypes can enable quick and focused discussion on functionality, save time and cost, and provide faster access to useful feedback.</p>
-						<a href="{% url 'hw5' %}" class="button button-style1">Read More</a>
-					</section>
+    <!-- Featured -->
+    <div id="featured">
+      <div class="container">
+        <header>
+          <h2>歡迎來到 使用者體驗</h2>
+        </header>
+        <p>
+          在這堂<strong>使用者體驗</strong>課程中，我們將為您帶來不同的UI/UX知識.
+          並且呈現給您第八組的課後作業，讓您對UI/UX有更完整的理解.
+        </p>
+        <hr />
+        <div class="row">
+          <section class="4u">
+            <img src="\static\images\megabank.png" />
+            <h3>HW 1</h3>
+            <p>
+              The goal of HW1 is to run CI to examine users' experience
+              regarding foreign exchange via online systems or mobile apps.
+            </p>
+            <a href="{% url 'hw1' %}" class="button button-style1">Read More</a>
+          </section>
+          <section class="4u">
+            <img src="\static\images\hw2_pro.jpg" />
+            <h3>HW 2</h3>
+            <p>
+              In this HW2, we will use the tool of Affinity diagram to learn how
+              to organize data and ideas.
+            </p>
+            <a href="{% url 'hw2' %}" class="button button-style1">Read More</a>
+          </section>
+          <section class="4u">
+            <img src="\static\images\hw3_persona.png" />
+            <h3>HW 3</h3>
+            <p>
+              In UI/UX design, a persona represents the needs, expectations and
+              behaviours of the target user, providing a specific reference
+              point to help designers produce designs that are closer to the
+              user's needs.
+            </p>
+            <a href="{% url 'hw3' %}" class="button button-style1">Read More</a>
+          </section>
+          <section class="4u">
+            <img src="\static\images\hw4.png" />
+            <h3>HW 4</h3>
+            <p>
+              Using LOFI prototypes can enable quick and focused discussion on
+              functionality, save time and cost, and provide faster access to
+              useful feedback.
+            </p>
+            <a href="{% url 'hw4' %}" class="button button-style1">Read More</a>
+          </section>
+          <section class="4u">
+            <img src="\static\images\hw5.jpeg" />
+            <h3>HW 5</h3>
+            <p>
+              Based on the LOFI prototypes' feedback collected, here are some
+              possible revisions to the Lo-Fi design we have came up with.
+            </p>
+            <a href="{% url 'hw5' %}" class="button button-style1">Read More</a>
+          </section>
+          <section class="4u">
+            <img src="\static\images\hw6.png" />
+            <h3>HW 6</h3>
+            <p>
+              Heuristic Evaluation helps learn UI/UX design by providing
+              practical guidelines and improvement suggestions for interface
+              design. It analyzes usability and user experience, considering
+              user needs and behavior, while also enabling learning from
+              experts' thinking and design decisions to enhance design abilities
+              and intuition.
+            </p>
+            <a href="{% url 'hw6' %}" class="button button-style1">Read More</a>
+          </section>
+        </div>
+      </div>
+    </div>
 
-				</div>
-			</div>
-		</div>
+    <!-- Main -->
+    <div id="main">
+      <div id="content" class="container">
+        <div class="row">
+          <section class="6u">
+            <a href="{% url 'hw1' %}" class="image full"
+              ><img src="\static\images\artifact_model.jpg" alt=""
+            /></a>
+            <header>
+              <h2>兆豐銀行換匯功能之使用者體驗</h2>
+            </header>
+            <p>
+              在這次的作業中，我們將扮演研究者向受訪者訪問使用兆豐銀行外匯兌換功能的心得，並將其製作成
+              <strong>Artifact Model </strong>和
+              <strong>Flow Model</strong>
+              以方便我們探討該功能的流程和使用之必要性.
+            </p>
+          </section>
+          <section class="6u">
+            <a href="{% url 'hw2' %}" class="image full"
+              ><img src="/static/images/Affinity_diagram.jpg" alt=""
+            /></a>
+            <header>
+              <h2>訪問結果之資料分析和組織</h2>
+            </header>
+            <p>
+              在這次的作業中，我們將分析作業一的訪問結果，並且使用<strong>
+                Affinity Diagram </strong
+              >來重新組織使用者的痛點、動機和偏好，以方便未來網站的策略規劃.
+            </p>
+          </section>
+        </div>
 
-	<!-- Main -->
-		<div id="main">
-			<div id="content" class="container">
+        <div class="row">
+          <section class="6u">
+            <a href="{% url 'hw3' %}" class="image full"
+              ><img src="\static\images\hw3_persona.png" alt=""
+            /></a>
+            <header>
+              <h2>HW3</h2>
+            </header>
+            <p>
+              <strong>Persona</strong>
+              是一個常用的設計工具，它代表了我們所設計的產品的目標用戶群體的具體代表人物。透過Persona，我們將深入分析並了解我們的目標客戶，並將結果運應用到設計當中.
+            </p>
+          </section>
+          <section class="6u">
+            <a href="{% url 'hw4' %}" class="image full"
+              ><img src="\static\images\hw4.png" alt=""
+            /></a>
+            <header>
+              <h2>HW4</h2>
+            </header>
+            <strong>LOFI</strong
+              >原型設計和分析可以幫助我們更好地理解用戶需求，優化工作流程，快速迭代並提高產品品質.
+            </p>
+          </section>
+        </div>
 
-				<div class="row">
-					<section class="6u">
-						<a href="{% url 'hw1' %}" class="image full"><img src="\static\images\artifact_model.jpg" alt=""></a>
-						<header>
-							<h2>兆豐銀行換匯功能之使用者體驗</h2>
-						</header>
-						<p>在這次的作業中，我們將扮演研究者向受訪者訪問使用兆豐銀行外匯兌換功能的心得，並將其製作成 <strong>Artifact Model </strong>和 <strong>Flow Model</strong> 以方便我們探討該功能的流程和使用之必要性.</p>
-					</section>				
-					<section class="6u">
-						<a href="{% url 'hw2' %}" class="image full"><img src="/static/images/Affinity_diagram.jpg" alt=""></a>
-						<header>
-							<h2>訪問結果之資料分析和組織</h2>
-						</header>
-						<p>在這次的作業中，我們將分析作業一的訪問結果，並且使用<strong> Affinity Diagram </strong>來重新組織使用者的痛點、動機和偏好，以方便未來網站的策略規劃.</p>
-					</section>				
-				</div>
+        <div class="row">
+          <section class="6u">
+            <a href="{% url 'hw5' %}" class="image full"
+              ><img src="\static\images\hw5.jpeg" alt=""
+            /></a>
+            <header>
+              <h2>HW5</h2>
+            </header>
+            <p>
+              <strong>LOFI Prototype</strong
+              >的feedback，我們將針對使用者的回饋進行分析，並且提出改善的方向.
+            </p>
+          </section>
+          <section class="6u">
+            <a href="{% url 'hw6' %}" class="image full"
+              ><img src="\static\images\hw6.png" alt=""
+            /></a>
+            <header>
+              <h2>HW6</h2>
+            </header>
+            <p>
+              <strong>Heuristic Evaluation</strong
+              >是一種評估界面設計的方法，通過學習和理解這些準則，可以提升對設計原則和最佳實踐的理解，從而在設計過程中更好地考慮用戶需求和行為。
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
 
-				<div class="row">
-					<section class="6u">
-						<a href="{% url 'hw3' %}" class="image full"><img src="\static\images\hw3_persona.png" alt=""></a>
-						<header>
-							<h2>HW3</h2>
-						</header>
-						<p><strong>Persona</strong> 是一個常用的設計工具，它代表了我們所設計的產品的目標用戶群體的具體代表人物。透過Persona，我們將深入分析並了解我們的目標客戶，並將結果運應用到設計當中.</p>
-					</section>				
-					<section class="6u">
-						<a href="{% url 'hw5' %}" class="image full"><img src="\static\images\hw5.png" alt=""></a>
-						<header>
-							<h2>HW5</h2>
-						</header>
-						<p><strong>LOFI</strong>原型設計和分析可以幫助我們更好地理解用戶需求，優化工作流程，快速迭代並提高產品品質.</p>
-					</section>				
-				</div>
-			
-			</div>
-		</div>
+    <!-- Tweet -->
+    <div id="tweet">
+      <div class="container">
+        <section>
+          <blockquote>
+            &ldquo;賈伯斯有一句名言：「我討厭笨蛋，但我做的產品連笨蛋也會用」，所以從使用者需求出發，專注在使用者體驗，才能設計出笨蛋也會用的系統。&rdquo;
+          </blockquote>
+        </section>
+      </div>
+    </div>
 
-	<!-- Tweet -->
-		<div id="tweet">
-			<div class="container">
-				<section>
-					<blockquote>&ldquo;賈伯斯有一句名言：「我討厭笨蛋，但我做的產品連笨蛋也會用」，所以從使用者需求出發，專注在使用者體驗，才能設計出笨蛋也會用的系統。&rdquo;</blockquote>
-				</section>
-			</div>
-		</div>
+    <!-- Footer -->
+    <div id="footer">
+      <div class="container">
+        <section>
+          <header>
+            <h2>使用者體驗</h2>
+            <span class="byline"
+              >一個厲害的產品，要能被使用者接受，要能被使用者批評，要能為使用者更改</span
+            >
+          </header>
+          <ul class="contact">
+            <li>
+              <a href="https://github.com/Tonyrj3268" class="fa fa-github"
+                ><span>github</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/chia-cheng-lin-45510826a/"
+                class="fa fa-linkedin"
+                ><span>linkedin</span></a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
 
-	<!-- Footer -->
-		<div id="footer">
-			<div class="container">
-				<section>
-					<header>
-						<h2>使用者體驗</h2>
-						<span class="byline">一個厲害的產品，要能被使用者接受，要能被使用者批評，要能為使用者更改</span>
-					</header>
-					<ul class="contact">
-						<li><a href="https://github.com/Tonyrj3268" class="fa fa-github"><span>github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/chia-cheng-lin-45510826a/" class="fa fa-linkedin"><span>linkedin</span></a></li>
-					</ul>
-				</section>
-			</div>
-		</div>
-
-	<!-- Copyright -->
-		<div id="copyright">
-			<div class="container">
-				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
-			</div>
-		</div>
-		<script src="{% static 'js/init.js' %}"></script>
-	</body>
+    <!-- Copyright -->
+    <div id="copyright">
+      <div class="container">
+        Design: <a href="http://templated.co">TEMPLATED</a> Images:
+        <a href="http://unsplash.com">Unsplash</a> (<a
+          href="http://unsplash.com/cc0"
+          >CC0</a
+        >)
+      </div>
+    </div>
+    <script src="{% static 'js/init.js' %}"></script>
+  </body>
 </html>
