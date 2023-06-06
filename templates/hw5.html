@@ -1,5 +1,47 @@
 {% extends 'base.html' %} {% load static %} {% block css %}
 <link rel="stylesheet" href="{% static 'css/hw3.css' %}" />
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  #featured {
+    padding: 20px;
+  }
+
+  .sub_container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .page-title {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  .page-subtitle {
+    font-size: 18px;
+    color: #555;
+  }
+
+  .content-section {
+    margin-bottom: 20px;
+  }
+
+  .content-section h3 {
+    font-size: 20px;
+    color: #000;
+  }
+
+  .content-section ul {
+    list-style-type: disc;
+    margin-left: 0px;
+  }
+</style>
 {% endblock css %} {% block Logo %}
 <div id="logo">
   <h1><a>使用者體驗作業展示</a></h1>
@@ -7,12 +49,14 @@
 {% endblock Logo %} {% block Featured %}
 <!--Content-->
 <div id="featured">
-  <div class="container bg-white">
+  <div class="container bg-white sub_container">
     <header>
       <h2>作業五</h2>
     </header>
     <p>分析我們Lofi Prototype獲得的Feedback</p>
-    <div class="flex flex-col gap-8 justify-center items-center bg-white">
+    <div
+      class="flex flex-col gap-8 justify-center items-center bg-white content-section"
+    >
       <h3>Here are the summary the feedback/comments/insights we received:</h3>
       <ul style="width: 70%">
         <li>
@@ -32,7 +76,9 @@
       </ul>
     </div>
     <br />
-    <div class="flex flex-col gap-8 justify-center items-center">
+    <div
+      class="flex flex-col gap-8 justify-center items-center content-section"
+    >
       <strong
         ><p>
           Based on the feedback collected, here are some possible revisions to
@@ -58,7 +104,7 @@
         </li>
         <li>Further optimize the other functionalities of the app panel.</li>
       </ul>
-      <p style="width: 70%">
+      <p>
         It's important to prioritize these revisions based on their impact and
         feasibility, and to test the revised Lo-Fi design with users to ensure
         that it meets their needs and expectations.

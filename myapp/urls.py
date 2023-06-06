@@ -27,4 +27,5 @@ urlpatterns = [
     path("hw4", views.hw4, name="hw4"),
     path("hw5", views.hw5, name="hw5"),
     path("hw6", views.hw6, name="hw6"),
+    path("HIFI", views.HIFI, name="HIFI"),
 ]

@@ -1,0 +1,94 @@
+{% extends 'base.html' %} {% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'css/hw3.css' %}" />
+<style>
+  .iframe-container {
+    /* 設定iframe容器的寬度、高度，以及位置等屬性 */
+    width: 960px;
+    height: 569px;
+    position: relative;
+    margin: 40px auto 0;
+  }
+  .intro-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    
+  }
+
+  .intro-text h3 {
+    font-size: 24px;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .intro-text h4 {
+    font-size: 20px;
+    color: #000;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .intro-text p {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  .intro-text b {
+    font-weight: bold;
+    color: #000;
+  }
+  .sub_container {
+    max-width: 960;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+</style>
+{% endblock css %} {% block Logo %}
+<div id="logo">
+  <h1><a>使用者體驗作業展示</a></h1>
+</div>
+{% endblock Logo %} {% block Featured %}
+<!--Content-->
+<div id="featured">
+  <div class="container sub_container bg-white">
+    <header>
+      <h2>HI-FI Prototype展示</h2>
+    </header>
+    <!-- 介紹文 -->
+    <div class="intro-text">
+      <h3>歡迎來到全新的兆豐銀行外匯交易平台</h3>
+      <p>
+        我們努力改善並簡化了外匯交易流程，以提供給您更佳的使用體驗。我們專注於功能性及簡易性，希望透過我們的平台，能讓您的交易更便利、更直觀。
+      </p>
+
+      <b>實用功能與優化介面</b>
+      <p>
+        我們新增了實用的功能，如外匯匯率表</b>。透過這個匯率表，您可以隨時掌握即時匯率，讓您能夠輕易做出明智的交易決定。此外，我們也優化了平台介面，讓畫面更為美觀簡潔。新的介面設計，不僅美觀，更能提供直覺式的操作經驗。
+      </p>
+
+      <b>訂製的流程設計</b>
+      <p>
+        在流程的設計上，我們更是按照使用者需求進行訂製。例如，您現在可以在我們的平台上將200美元兌換成台幣，這個功能旨在提供便利，讓您能在任何時間、任何地點進行匯兌操作。另一項實用功能是我們的平台現在可以為您定位最近的實體兆豐銀行分行，不論您身在何處，我們都能快速為您導航到最近的分行，使您能在需要的時候迅速找到銀行。
+      </p>
+
+      <b>完整的外匯交易明細</b>
+      <p>
+        我們提供完整的外匯交易明細功能，無論是您進行了哪些交易，或者是交易的詳細資訊，包括交易金額、交易時間以及交易匯率等資訊，都能一目瞭然地在我們的平台上呈現。這樣一來，您就能更容易掌握自己的財務狀況。
+      </p>
+    </div>
+    <div class="iframe-container flex items-center flex-col">
+      <iframe
+        style="border: 1px solid rgba(0, 0, 0, 0.1)"
+        width="960"
+        height="569"
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F1hUtpEDQvTWES8yJPXV77I%2FUIUX%3Ftype%3Ddesign%26node-id%3D251-7604%26scaling%3Dscale-down%26page-id%3D229%253A3762%26starting-point-node-id%3D229%253A3901"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+{% endblock Featured%} {% block js %} {% endblock js%}

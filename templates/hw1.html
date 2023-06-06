@@ -20,6 +20,15 @@
 			<link rel="stylesheet" href="/static/css/style-desktop.css" />
 		</noscript>
 	</head>
+	<style>
+		.sub_container {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 20px;
+		border-radius: 8px;
+		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	}
+	</style>
 	<body class="homepage">
 
 	<!-- Header -->
@@ -35,6 +44,7 @@
 						<li><a href="{% url 'hw4' %}">HW 4 - Personas</a></li>
 						<li><a href="{% url 'hw5' %}">HW 5 - LOFI Summary</a></li>
 						<li><a href="{% url 'hw6' %}">HW 6 - Heuristic Evaluation</a></li>
+						<li><a href="{% url 'HIFI' %}">FINAL - HIFI Prototype</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -47,15 +57,17 @@
 		</div>
 		
     <!--Content-->
-	<div id="featured">
-		<div class="container">
-			<header>
-				<h2>作業一</h2>
-			</header>
-			<p>兆豐銀行換匯功能之使用者體驗</p>
-		</div>
-		<div class="flex flex-col gap-8 justify-center items-center ">
+	<div id="featured" >
+		
+		<div class="flex flex-col gap-8 justify-center items-center container" style="background-color: rgb(255 255 255);max-width: 1200px;border-radius: 8px;
+		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
 			<!-- card-->
+			<div style="background-color: rgb(255 255 255);">
+				<header>
+					<h2>作業一</h2>
+				</header>
+				<p>兆豐銀行換匯功能之使用者體驗</p>
+			</div>
 			<section id="one" class="wrapper style1">
 				<div class="inner">
 					<article class="feature left">

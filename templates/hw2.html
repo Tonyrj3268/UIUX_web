@@ -1,5 +1,14 @@
 {% extends 'base.html' %} {% load static %} {% block css %}
 <link rel="stylesheet" href="{% static 'css/hw2.css' %}" />
+<style>
+  .sub_container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+</style>
 {% endblock css %} {% block Logo %}
 <div id="logo">
   <h1><a>使用者體驗作業展示</a></h1>
@@ -7,7 +16,7 @@
 {% endblock Logo %} {% block Featured %}
 <!--Content-->
 <div id="featured">
-  <div class="container">
+  <div class="container sub_container bg-white">
     <header>
       <h2>作業二</h2>
     </header>

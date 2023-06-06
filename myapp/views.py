@@ -36,3 +36,8 @@ def hw5(request):
 def hw6(request):
     # 今天先不探討什麼是 render，先記得它會去撈 test.html
     return render(request, "hw6.html")
+
+
+def HIFI(request):
+    # 今天先不探討什麼是 render，先記得它會去撈 test.html
+    return render(request, "HIFI.html")
